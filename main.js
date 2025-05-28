@@ -1,7 +1,7 @@
-import { createHeader } from "./components/Header.js";
-import { createGallery } from "./components/Gallery.js";
+import { createHeader } from "./Header.js";
+import { createGallery } from "./Gallery.js";
 import { fetchImages } from "./api.js";
-import "./styles/main.css"; 
+import "./main.css"; 
 
 const app = document.querySelector("#app");
 
@@ -24,7 +24,7 @@ async function renderImages(query) {
 
 
 function startApp() {
-  app.innerHTML = ""; // Limpiamos todo
+  app.innerHTML = ""; 
   const header = createHeader(renderImages, () => renderImages("paisajes"));
   app.appendChild(header);
   renderImages("paisajes"); 

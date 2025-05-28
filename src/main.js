@@ -24,7 +24,7 @@ async function renderImages(query) {
 
 
 function startApp() {
-  app.innerHTML = ""; // Limpiamos todo
+  app.innerHTML = ""; 
   const header = createHeader(renderImages, () => renderImages("paisajes"));
   app.appendChild(header);
   renderImages("paisajes"); 
