@@ -60,6 +60,3 @@ gatpin/
 - `npm run build`: Construye el proyecto para producción
 - `npm run preview`: Vista previa de la versión de producción
 
-## Licencia
-
-MIT 
