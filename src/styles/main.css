@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  padding: 1rem;
+}
+
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: left;
+  padding: 0 1rem;
+}
+
+.header .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e60023; 
+}
+
+.header .search {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.header input {
+  padding: 0.5rem;
+  width: 250px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.header button {
+  padding: 0.5rem 1rem;
+  background-color: #e60023;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header button:hover {
+  background-color: #c2001b;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+.image-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.image-card:hover {
+  transform: scale(1.03);
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-card p {
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.image-card a {
+  text-decoration: none;
+  color: #e60023;
+}
+
+@media (max-width: 600px) {
+  .header input {
+    width: 100%;
+  }
+
+  .header {
+    padding: 0 1rem;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
